@@ -1,0 +1,11 @@
+{
+  "name": "logica-e-programacao",
+  "version": "1.0.0",
+  "description": "Exercício da 2ª aula de lógica e programação com JavaScript do Júlio de Lima.",
+  "main": "src/calculadora.js",
+  "scripts": {
+    "start": "node src/calculadora.js"
+  },
+  "author": "Caio Bêribá",
+  "license": "MIT"
+}
