@@ -1,6 +1,6 @@
 # Exercício Lógica e Programação (JavaScript)
 
-Esse exercício faz parte da 1ª aula de lógica e programação com JavaScript do Júlio de Lima. O objetivo foi treinar a escrita de funções em JavaScript, implementando funções de somar dois números e de calcular a média desses dois números. Posteriormente, foram feitos testes manuais para ambas as funções.
+Esse exercício faz parte da 2ª aula de lógica e programação com JavaScript do Júlio de Lima. O objetivo foi treinar a escrita de funções em JavaScript, implementando funções de somar dois números e de calcular a média desses dois números. Posteriormente, foram feitos testes manuais para ambas as funções.
 
 ## Funcionalidades
 
