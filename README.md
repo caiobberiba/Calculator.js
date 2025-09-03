@@ -8,10 +8,10 @@ Esse exercício faz parte da 1ª aula de lógica e programação com JavaScript 
 Função que recebe dois números e retorna a soma deles.
 
 ### Cálculo de Média
-Função que recebe os mesmos dois números e retorna a média entre eles.
+  Função que recebe dois números e retorna a média aritmética entre eles.
 
 **Arquivo principal:** `src/calculadora.js`
-**Testes:** `tests/calculadora.test.js`
+**Testes:** `test/calculadora.test.js`
 **Configuração:**
   - `package.json` para dependências e scripts
   - `.gitignore` para arquivos ignorados pelo Git
@@ -19,12 +19,28 @@ Função que recebe os mesmos dois números e retorna a média entre eles.
 ## Estrutura do Projeto
 
 ```
-src/
-  calculadora.js
-tests/
-  calculadora.test.js
-package.json
-.gitignore
+logica-e-programacao/
+├── src/
+│   └── calculadora.js
+├── tests/
+│   └── calculadora.test.js
+├── package.json
+└── .gitignore
+```
+
+## Como Testar
+
+Os testes das funções estão no arquivo `test/calculadora.test.js`.  
+Para executar os testes com Mocha, utilize:
+
+```bash
+npx mocha tests
+```
+
+Ou, se preferir, execute um arquivo específico:
+
+```bash
+npx mocha test/calculadora.test.js
 ```
 
 ## Observações
