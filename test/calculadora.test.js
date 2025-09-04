@@ -31,6 +31,10 @@ describe('Testes da Função de Soma da Calculadora', function () {
         const resultadoDaSomaComZero = SomarDoisNumeros(5, 0); // Coleta o resultado da função
         expect(resultadoDaSomaComZero).to.equal(5); // Compara o resultado com o valor que você espera
     });
+    it('A função deve ser capaz de somar dois números com zero corretamente', function () {
+        const resultadoDaSomaComZero = SomarDoisNumeros(0, 0); // Coleta o resultado da função
+        expect(resultadoDaSomaComZero).to.equal(0); // Compara o resultado com o valor que você espera
+    });
 });
 
 // Testes Automatizados (Função Média) com Mocha e Chai
@@ -51,8 +55,12 @@ describe('Testes da Função de Média da Calculadora', function () {
         expect(resultadoDaMediaDeDoisNumerosMisto).to.equal(-1); // Compara o resultado com o valor que você espera
     });
 
-    it('A função deve ser capaz de calcular a média de dois números com zero corretamente', function () {
-        const resultadoDaMediaDeDoisNumerosComZero = CalcularMediaDeDoisNumeros(5, 0); // Coleta o resultado da função
-        expect(resultadoDaMediaDeDoisNumerosComZero).to.equal(2.5); // Compara o resultado com o valor que você espera
+    it('A função deve ser capaz de calcular a média de um número com zero corretamente', function () {
+        const resultadoDaMediaDeUmNumeroComZero = CalcularMediaDeDoisNumeros(5, 0); // Coleta o resultado da função
+        expect(resultadoDaMediaDeUmNumeroComZero).to.equal(2.5); // Compara o resultado com o valor que você espera
+    });
+    it('A função deve ser capaz de calcular a média de dois zeros corretamente', function () {
+        const resultadoDaMediaDeDoisZeros = CalcularMediaDeDoisNumeros(0, 0); // Coleta o resultado da função
+        expect(resultadoDaMediaDeDoisZeros).to.equal(0); // Compara o resultado com o valor que você espera
     });
 });
