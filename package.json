@@ -1,7 +1,7 @@
 {
   "name": "logica-e-programacao",
-  "version": "1.0.0",
-  "description": "Exercício da 2ª aula de lógica e programação com JavaScript do Júlio de Lima.",
+  "version": "1.0.7",
+  "description": "Exercício de lógica e programação com JavaScript da Mentoria de Testes de Software do Júlio de Lima.",
   "main": "src/calculadora.js",
   "scripts": {
     "start": "node src/calculadora.js"
