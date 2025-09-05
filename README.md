@@ -122,10 +122,11 @@ console.log(DividirDoisNumeros(10, 4));      // 2.50
 
 // Tratamento de erros
 try {
-  DividirDoisNumeros(10, 0);
+   DividirDoisNumeros(10, 0);
 } catch (error) {
-  console.error(error.message);  // "Divisão por zero não permitida"
+   console.error(error.message);  // "Divisão por zero não permitida"
 }
+```
 
 ## 🛠️ Tecnologias Utilizadas
 
