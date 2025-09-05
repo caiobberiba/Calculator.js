@@ -1,23 +1,34 @@
-# Exercício Lógica e Programação (JavaScript)
+# 🧮 Calculator.js
 
-Esse exercício faz parte das aulas de Lógica e Programação da Mentoria em Testes de Software do Júlio de Lima. O objetivo foi treinar a escrita de funções em JavaScript, implementando várias operações matemáticas básicas e testando seu funcionamento correto. Foram criados testes automatizados utilizando Mocha e Chai, além de testes manuais para verificar o comportamento de cada função.
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](https://github.com/caiobberiba/logica-e-programacao)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Mocha](https://img.shields.io/badge/testing%20framework-Mocha-8D6748.svg)](https://mochajs.org/)
 
-## Funcionalidades
+Uma biblioteca JavaScript modular para operações matemáticas com testes abrangentes. Inicialmente desenvolvida durante a Mentoria em Testes de Software do Júlio de Lima, esta calculadora está em evolução constante com foco em código limpo e testes de alta qualidade.
 
-### Soma de Dois Números
-Função que recebe dois números e retorna a soma deles.
+## 📋 Índice
 
-### Cálculo de Média
-Função que recebe dois números e retorna a média aritmética entre eles.
+- [Funcionalidades](#-funcionalidades)
+- [Instalação](#-instalação)
+- [Como Usar](#-como-usar)
+- [Testes](#-testes)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Roadmap](#-roadmap)
+- [Contribuição](#-contribuição)
+- [Licença](#-licença)
 
-### Subtração de Dois Números
-Função que recebe dois números e retorna o resultado da subtração do primeiro pelo segundo.
+## ✨ Funcionalidades
 
-### Multiplicação de Dois Números
-Função que recebe dois números e retorna o produto da multiplicação entre eles.
+| Operação | Descrição | Uso |
+|----------|-----------|-----|
+| **Soma** | Soma dois números | `SomarDoisNumeros(5, 3)` → `8` |
+| **Média** | Calcula média aritmética | `MediaDeDoisNumeros(5, 3)` → `4` |
+| **Subtração** | Subtrai o segundo do primeiro | `SubtrairDoisNumeros(5, 3)` → `2` |
+| **Multiplicação** | Multiplica dois números | `MultiplicarDoisNumeros(5, 3)` → `15` |
+| **Divisão** | Divide com precisão decimal | `DividirDoisNumeros(5, 2)` → `2.50` |
 
-### Divisão de Dois Números
-Função que recebe dois números e retorna o resultado da divisão do primeiro pelo segundo, com duas casas decimais. Lança um erro do tipo RangeError se tentar dividir por zero.
+> **Tratamento de Erros:** A função de divisão verifica divisão por zero e lança `RangeError`.
 
 **Arquivo principal:** `src/calculadora.js`
 **Testes:** `test/calculadora.test.js` (testes automatizados com Mocha e Chai para todas as funções)
@@ -25,78 +36,120 @@ Função que recebe dois números e retorna o resultado da divisão do primeiro 
   - `package.json` para dependências e scripts
   - `.gitignore` para arquivos ignorados pelo Git
 
-## Estrutura do Projeto
+## 🏗️ Estrutura do Projeto
 
 ```
-logica-e-programacao/
-├── src/
-│   └── calculadora.js
-├── test/
-│   └── calculadora.test.js
-├── package.json
-├── package-lock.json
-└── .gitignore
+calculator.js/
+├── src/                  # Código fonte
+│   └── calculadora.js    # Implementação das funções matemáticas
+├── test/                 # Testes automatizados
+│   └── calculadora.test.js  # Testes das funções
+├── .github/              # Configurações do GitHub (futuramente)
+│   └── workflows/        # GitHub Actions (futuramente)
+├── package.json          # Dependências e scripts
+├── package-lock.json     # Versões fixas de dependências
+└── .gitignore            # Arquivos ignorados pelo Git
 ```
 
-## Como Testar
+## 🗺️ Roadmap
 
-Os testes automatizados das funções estão no arquivo `test/calculadora.test.js`.
+Este projeto está em evolução. Alguns recursos planejados:
 
-Para executar todos os testes com Mocha, utilize:
+- [ ] Funções trigonométricas (seno, cosseno, tangente)
+- [ ] Cálculos de potência e raiz quadrada
+- [ ] Operações com percentuais
+- [ ] Interface web simples
+- [ ] Melhor documentação com JSDoc
+- [ ] Cobertura de testes com relatórios
+
+## 🧪 Testes
+
+O projeto implementa testes rigorosos usando Mocha e Chai.
+
+### Executando os Testes
 
 ```bash
+# Executar todos os testes
+npm test
+
+# Ou diretamente com o Mocha
 npx mocha test
-```
 
-Ou, para rodar apenas o arquivo de teste específico:
-
-```bash
+# Executar apenas testes específicos
 npx mocha test/calculadora.test.js
 ```
 
 ### Tipos de Testes
 
-O projeto contém dois tipos de testes:
+1. **Testes Manuais**:
+   - Simples logs para visualização direta de resultados
+   - Úteis para desenvolvimento rápido
 
-1. **Testes Manuais**: Implementados através de `console.log()` para visualização direta dos resultados.
-2. **Testes Automatizados**: Implementados com Mocha e Chai, verificando:
-   - Soma de diferentes tipos de números
-   - Cálculo correto de média
-   - Subtração com diferentes valores
-   - Multiplicação de números
-   - Divisão de números com resultado formatado (2 casas decimais)
-   - Tratamento adequado da divisão por zero (deve lançar erro)
+2. **Testes Automatizados**:
+   - Casos de teste abrangentes para cada função
+   - Validação de casos normais e de borda
+   - Verificação de tratamento de erro
+   - Testes para números positivos, negativos e zero
 
-## Observações
-
-Este exercício foi expandido para incluir operações matemáticas completas (soma, subtração, multiplicação e divisão) e implementa tratamento de erros na divisão por zero. Todos os testes foram automatizados usando Mocha e Chai.
-
-## Instalação
+## 🚀 Instalação
 
 1. Clone o repositório:
-   ```
+   ```bash
    git clone https://github.com/caiobberiba/logica-e-programacao.git
    ```
-2. Instale as dependências:
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd logica-e-programacao
    ```
+3. Instale as dependências:
+   ```bash
    npm install
    ```
 
-## Tecnologias Utilizadas
+## 🔍 Como Usar
 
-- JavaScript (ES6+)
-- Node.js
-- Mocha (framework de testes)
-- Chai (biblioteca de asserções)
+Importe as funções necessárias em seu projeto JavaScript:
 
-## Contribuição
+```javascript
+const { SomarDoisNumeros, MediaDeDoisNumeros, DividirDoisNumeros } = require('./src/calculadora');
 
-Sinta-se à vontade para clonar o projeto, sugerir melhorias ou adicionar novos exemplos de funções em JavaScript. Pull requests são bem-vindos!
+// Exemplos de uso
+console.log(SomarDoisNumeros(10, 5));        // 15
+console.log(MediaDeDoisNumeros(10, 5));      // 7.5
+console.log(DividirDoisNumeros(10, 4));      // 2.50
 
-## Autor
+// Tratamento de erros
+try {
+  DividirDoisNumeros(10, 0);
+} catch (error) {
+  console.error(error.message);  // "Divisão por zero não permitida"
+}
 
-Caio Bêribá
+## 🛠️ Tecnologias Utilizadas
 
-## Licença
+- ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg) - Linguagem principal
+- ![Node.js](https://img.shields.io/badge/Node.js-Runtime-green.svg) - Ambiente de execução
+- ![Mocha](https://img.shields.io/badge/Mocha-Test_Framework-8D6748.svg) - Framework de testes
+- ![Chai](https://img.shields.io/badge/Chai-Assertion_Library-red.svg) - Biblioteca de asserções
 
-Este projeto está sob a licença MIT. Você pode usar, copiar, modificar e distribuir o código livremente.
+## 🤝 Contribuição
+
+Contribuições são sempre bem-vindas! Siga estes passos:
+
+1. Faça um Fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-funcao`)
+3. Adicione testes para sua nova funcionalidade
+4. Certifique-se de que todos os testes passam
+5. Commit suas mudanças (`git commit -m 'Adiciona nova função de cálculo'`)
+6. Push para a branch (`git push origin feature/nova-funcao`)
+7. Abra um Pull Request
+
+## 👤 Autor
+
+**Caio Bêribá**
+
+- GitHub: [@caiobberiba](https://github.com/caiobberiba)
+
+## 📝 Licença
+
+Este projeto está sob a [Licença MIT](LICENSE). Veja o arquivo LICENSE para mais detalhes.
