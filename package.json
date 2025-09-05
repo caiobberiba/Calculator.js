@@ -1,10 +1,11 @@
 {
   "name": "logica-e-programacao",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Exercício de lógica e programação com JavaScript da Mentoria de Testes de Software do Júlio de Lima.",
   "main": "src/calculadora.js",
   "scripts": {
-    "start": "node src/calculadora.js"
+    "start": "node src/calculadora.js",
+    "test": "mocha test/**/*.test.js"
   },
   "author": "Caio Bêribá",
   "license": "MIT",

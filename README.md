@@ -9,14 +9,16 @@ Uma biblioteca JavaScript modular para operações matemáticas com testes abran
 
 ## 📋 Índice
 
-- [Funcionalidades](#-funcionalidades)
-- [Instalação](#-instalação)
-- [Como Usar](#-como-usar)
-- [Testes](#-testes)
-- [Estrutura do Projeto](#-estrutura-do-projeto)
-- [Roadmap](#-roadmap)
-- [Contribuição](#-contribuição)
-- [Licença](#-licença)
+- [✨ Funcionalidades](#-funcionalidades)
+- [🏗️ Estrutura do Projeto](#️-estrutura-do-projeto)
+- [🗺️ Roadmap](#️-roadmap)
+- [🧪 Testes](#-testes)
+- [🚀 Instalação](#-instalação)
+- [🔍 Como Usar](#-como-usar)
+- [🛠️ Tecnologias Utilizadas](#️-tecnologias-utilizadas)
+- [🤝 Contribuição](#-contribuição)
+- [👤 Autor](#-autor)
+- [📝 Licença](#-licença)
 
 ## ✨ Funcionalidades
 
@@ -148,7 +150,9 @@ Contribuições são sempre bem-vindas! Siga estes passos:
 
 **Caio Bêribá**
 
-- GitHub: [@caiobberiba](https://github.com/caiobberiba)
+- [GitHub](https://github.com/caiobberiba)
+- [LinkedIn](https://linkedin.com/in/caioberiba)
+- [Medium](https://medium.com/@caioberiba)
 
 ## 📝 Licença
 
