@@ -1,4 +1,4 @@
-# 🧮 Calculator.js
+# 🧮 Calculadora.js
 
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](https://github.com/caiobberiba/logica-e-programacao)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
